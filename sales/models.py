@@ -5,7 +5,7 @@ from django.core.exceptions import ValidationError
 from organization.models import BusinessUnit
 from products.models import Product
 from inventory.models import InventoryStock
-from customers.models import Customer # <<< IMPORTED CUSTOMER MODEL
+from customers.models import Customer, CustomerLedgerEntry # <<< IMPORTED CUSTOMER MODEL
 from decimal import Decimal
 
 class Sale(models.Model):
